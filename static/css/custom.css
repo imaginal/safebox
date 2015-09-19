@@ -1,0 +1,58 @@
+body {
+    font-size: 16px;
+}
+.strike {
+    text-decoration: line-through;
+}
+.line {
+    display:inline-block;
+    position: relative;
+    background:url(../img/lol.png);
+    background-size:100% 100%;
+}
+.jumbotron p a {
+  color: #c7e7dc;
+  text-decoration: none;
+  border-bottom: 4px solid #c44;
+}
+.jumbotron p a:hover {
+  color: #c7e7dc;
+  text-decoration: none;
+  border-bottom: 4px solid #c44;
+}
+.underline {
+  border-bottom: 4px solid #c44;
+}
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 4px solid;
+  border-color: red;
+
+  -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  -ms-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
+  transform:rotate(-20deg);
+}
+.fa-super {
+    font-size: 80px;
+}
+.actions .btn {
+    margin: 20px;
+}
+.st_share_buttons {
+    height: 25px;
+}
+.ticket-code {
+  display: inline-block;
+}
+.inline-block {
+  display: inline-block;
+}

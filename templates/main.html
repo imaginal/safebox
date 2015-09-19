@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-carousel hidden-print">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center">
+        <h1>SafeBox</h1>
+        <p>Keep your documents safe and have a <a href="#">rescue</a> plan</p>
+        <div class="actions">
+          <a class="btn btn-default btn-lg" href="#modal-entrance" data-toggle="modal">
+            <i class="fa fa-cloud fa-super"></i><br>
+            Protect your <br> documents
+          </a>
+          <a class="btn btn-default btn-lg" href="#modal-entrance-vote" data-toggle="modal">
+            <i class="fa fa-key fa-super"></i><br>
+            Access your <br> documents
+          </a>
+        </div>
+        <div class="shameless-self-promotion">
+          We're open! Checkout the
+          <a href="https://github.com/imaginal">source code</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/privacy-policy/">Our Privacy Policy</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          Created by SafeBox Team
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--
+<div id="social-buttons" class="hidden-print">
+  <div class="container">
+    <form id="newsletter" method="post" action="https://formkeep.com/f/d8c63a79aead">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2 col-sm-6">
+          <div class="form-group margin-bottom">
+            <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <button type="submit" class="btn btn-success btn-block margin-bottom-lg"
+              data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with the Safe Poll Me"
+              data-content="We'll send you updates about new features. We won't spam you. Scout's honor.">
+            Subscribe for the future best polls only&nbsp;&nbsp;<i class="fa fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="st_share_buttons">
+    <span class='st_facebook_hcount' displayText='Facebook'></span>
+    <span class='st_twitter_hcount' displayText='Tweet'></span>
+    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+    <span class='st_email_hcount' displayText='Email'></span>
+  </div>
+</div>
+-->
+
+<div class="container">
+
+<section class="hidden-print">
+  <a id="why-its-safe" name="why-its-safe"></a>
+  <a id="get-started" name="get-started"></a>
+
+  <div class="stripe-ad">
+
+
+  <p class="lead">
+  SafeBox is a free and easy-to-use service that provides
+  place to safely store copies of your documents and
+  rescue system for everyone in emergency situation.
+  </p>
+
+  </div>
+</section>
+
+
+<section id="why" class="feature-list">
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <h4><i class="fa fa-flag"></i> We're open</h4>
+      Open Source guarantees that the system is fair and no extra data is stored.
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <h4><i class="fa fa-sign-in"></i> Easy to use</h4>
+      It means no internet required for call to help.
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <h4><i class="fa fa-lock"></i> Privacy first</h4>
+      We encrypt your sensitivity so even our staff can not access them.
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <h2 class="page-header">How it works</h2>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <p>
+        1. You authenticate ...
+      </p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <p>
+        2. You upload ....
+      </p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <p>
+        3. We send your documents ...
+      </p>
+    </div>
+  </div>
+</section>
+
+</div> <!-- /container -->
+
+<div class="modal fade" id="modal-entrance" tabindex="-1" role="dialog" aria-labelledby="modal-entrance-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        <h2 class="modal-title" id="modal-entrance-label">Connect your ID-card</h2>
+      </div>
+      <div class="modal-body text-lg">
+        <p class="margin-bottom-lg">
+          Connect ID card reader to your computer and make sure it is installed and running on your computer (most card readers have an indicator light for confirmation) and put your card in the reader.
+        </p>
+
+        <p class="margin-bottom-lg">
+          Click authenticate and enter their ID card PIN1 code (four digits).
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success btn-lg block-xs" href="https://www.safepoll.me/admin/">
+          Authenticate &nbsp;<i class="fa fa-external-link fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-entrance-vote" tabindex="-1" role="dialog" aria-labelledby="modal-entrance-vote-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        <h2 class="modal-title" id="modal-entrance-vote-label">Connect your ID-card</h2>
+      </div>
+      <div class="modal-body text-lg">
+        <p class="margin-bottom-lg">
+          Connect ID card reader to your computer and make sure it is installed and running on your computer (most card readers have an indicator light for confirmation) and put your card in the reader.
+        </p>
+
+        <p class="margin-bottom-lg">
+          Click authenticate and enter their ID card PIN1 code (four digits).
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success btn-lg block-xs" href="https://www.safepoll.me/auth/">
+          Authenticate &nbsp;<i class="fa fa-external-link fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">
+    stLight.options({publisher: "1ab002f3-07c1-4e0c-a9ff-889fa3918043", doNotHash: true, doNotCopy: true, hashAddressBar: false});
+  </script>
+
+{% endblock content %}

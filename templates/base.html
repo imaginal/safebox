@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Keep your documents safe and have a rescue plan">
+  <meta name="author" content="Dave Gandy">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+  <title>SafeBox - Keep your documents safe</title>
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="/static/css/site.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+  <link rel="stylesheet" href="/static/css/font-awesome.css">
+  <link rel="stylesheet" href="/static/css/custom.css">
+
+  <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.fonticons.com/ffe176a3.js"></script>
+
+</head>
+<body>
+  <div id="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
+    <div class="collapse hidden-print" id="banner">
+  <div class="container">
+    <div class="message-container">
+      <div class="tagline">
+        <span id="rotating-message"></span>
+      </div>
+      <div class="action">
+        <a id="rotating-url" class="btn btn-primary btn-block" href=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-inverse navbar-static-top hidden-print">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars fa-lg"></i>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden-sm  active"><a href="./"><i class="fa fa-flag"></i> Home</a></li>
+        <li class="hidden-sm">
+          <a href="#why-its-safe">Why It's Safe</a>
+        </li>
+        <li><a href="#get-started">Get Started</a></li>
+        <!--
+        <li><a href="#pricing">Pricing</a></li>
+        -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://fb.com/flyonts">Give Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% block content %}
+
+{% endblock content %}
+
+  <footer id="footer" class="footer hidden-print">
+  <div class="container text-center">
+    <div>
+      <i class="fa fa-flag"></i> SafeBox for Travelers v.0.1
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Created by <a href="https://fb.com/flyotns">Volodymyr Flonts</a>
+    </div>
+    <!--
+    <div>
+      Code licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>
+      <span class="hide-xs hide-sm">&middot;</span><br class="hide-md hide-lg">
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+    </div>
+    -->
+    <div>
+      Thanks to <a href="http://garage48.org/">Garage48</a> for organizing the excellent
+      <a href="http://garage48.org/events/trafficking-in-persons">Hackathon</a>
+    </div>
+    <div class="project">
+      <a href="#">Project</a> &middot;
+      <a href="#">Issues</a> &middot;
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/static/js/site.js"></script>
+  <script src="/static/js/custom.js"></script>
+
+  </body>
+</html>
