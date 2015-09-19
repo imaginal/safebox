@@ -1,0 +1,17 @@
+*.pyc
+*.swp
+*~
+*.db
+*.mo
+.svn
+.git
+._*
+*.log
+*.out
+*.rdb
+*.pid
+*config.py
+static/uploads
+celerybeat*
+deploy/*
+logs/*
