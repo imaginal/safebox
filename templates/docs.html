@@ -7,21 +7,28 @@
 <section id="how-it-works">
   <h2 class="page-header">Welcome {{ user.full_name }}</h2>
 
-  <h3>Your travel info</h3>
-  <div class="table-responsive">
-    <table class="table">
+  <h3>Your travels</h3>
+  <table class="table">
+    <thead>
       <tr><th>Country</th><th>Address</th><th>Arrival</th><th>Departure</th></tr>
-      {% for t in travels %}
-      <tr><td>{{ t.country }}</td><td>{{ t.address }}</td>
-        <td>{{ t.arrival_date }}</td><td>{{ t.departure_date }}</td></tr>
-      {% endfor %}
-    </table>
-  </div>
+    </thead>
+    <tbody>
+    {% for t in travels %}
+    <tr><td>{{ t.country }}</td><td>{{ t.address }}</td>
+      <td>{{ t.arrival_date }}</td><td>{{ t.departure_date }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+<br>
+<br>
 
   <h3>Your documents</h3>
   {% for d in documents %}
   <div class="row">
-    <div class="col-md-12 col-sm-12">
+    <div class="col-md-4 col-sm-4">
+      <img src="/static/img/passport.png">
+      <br>{{ d.name }}
     </div>
   </div>
   {% endfor %}
