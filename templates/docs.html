@@ -5,7 +5,14 @@
 <div class="container">
 
 <section id="how-it-works">
-  <h2 class="page-header">Welcome {{ user.full_name }}</h2>
+  <h2 class="page-header">Welcome {{ user.full_name }}
+
+        <span style="display: inline-block; float: right">
+          <a class="btn btn-danger btn-lg" href="#modal-need-help" data-toggle="modal">
+            Need Help?
+          </a>
+        </span>
+  </h2>
 
   <h3>Your travels</h3>
   <table class="table">
