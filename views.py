@@ -10,7 +10,7 @@ from models import *
 
 @app.route('/favicon.ico')
 def favicon():
-    return ""
+    return send_file("static/img/favicon.png", cache_timeout=86400)
 
 
 @app.route('/')

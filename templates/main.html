@@ -6,23 +6,26 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1>SafeBox</h1>
+        <div class="logo">
+          <h1>SafeBox</h1>
+        </div>
         <p>Keep your documents safe and have a <a href="#">rescue</a> plan</p>
         <div class="actions">
-          <a class="btn btn-default btn-lg" href="#modal-entrance" data-toggle="modal">
+          <a class="btn btn-default btn-lg" href="#modal-protect-docs" data-toggle="modal">
             <i class="fa fa-cloud fa-super"></i><br>
             Protect your <br> documents
           </a>
-          <a class="btn btn-default btn-lg" href="#modal-entrance-vote" data-toggle="modal">
+          <a class="btn btn-default btn-lg" href="#modal-access-docs" data-toggle="modal">
             <i class="fa fa-key fa-super"></i><br>
             Access your <br> documents
           </a>
         </div>
         <div class="shameless-self-promotion">
-          We're open! Checkout the
-          <a href="https://github.com/imaginal">source code</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
-          <a href="/privacy-policy/">Our Privacy Policy</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
-          Created by SafeBox Team
+          <i class="fa fa-flag"></i> &nbsp;
+          In cooperation with the Ministry of Foreign Affairs of the Republic of Latvia
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <i class="fa fa-lock"></i> &nbsp;
+          <a href="/privacy-policy/">Our Privacy Policy</a>
         </div>
       </div>
       </div>
@@ -120,45 +123,78 @@
 
 </div> <!-- /container -->
 
-<div class="modal fade" id="modal-entrance" tabindex="-1" role="dialog" aria-labelledby="modal-entrance-label">
+<div class="modal fade" id="modal-protect-docs" tabindex="-1" role="dialog" aria-labelledby="modal-protect-docs-label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+
+<form class="form-horizontal" method="post" action="/signup">
+
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-        <h2 class="modal-title" id="modal-entrance-label">Connect your ID-card</h2>
+        <h2 class="modal-title" id="modal-protect-docs-label">Welcome, please Sign Up</h2>
       </div>
       <div class="modal-body text-lg">
         <p class="margin-bottom-lg">
-          Connect ID card reader to your computer and make sure it is installed and running on your computer (most card readers have an indicator light for confirmation) and put your card in the reader.
+          Before we start choose pin code which will be used for alarm message:
         </p>
 
-        <p class="margin-bottom-lg">
-          Click authenticate and enter their ID card PIN1 code (four digits).
-        </p>
+  <div class="form-group">
+    <label for="MobileNumber1" class="col-sm-4 control-label">Moble No</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="MobileNumber1" placeholder="+371 000 00 00">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="BirthDate1" class="col-sm-4 control-label">Birth date</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="BirthDate1" placeholder="1980-12-31">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="PinCode1" class="col-sm-4 control-label">Pin code</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" id="PinCode1" placeholder="****" size="6" maxlength="6">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">  I agree to the
+          <i class="fa fa-lock"></i>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </label>
+      </div>
+    </div>
+  </div>
+
       </div>
       <div class="modal-footer">
-        <a class="btn btn-success btn-lg block-xs" href="https://www.safepoll.me/admin/">
-          Authenticate &nbsp;<i class="fa fa-external-link fa-lg"></i>
-        </a>
+        <button class="btn btn-success btn-lg block-xs" type="submit">
+          Sign Up &nbsp;<i class="fa fa-sign-in fa-lg"></i>
+        </button>
       </div>
+
+</form>
+
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="modal-entrance-vote" tabindex="-1" role="dialog" aria-labelledby="modal-entrance-vote-label">
+<div class="modal fade" id="modal-access-docs" tabindex="-1" role="dialog" aria-labelledby="modal-access-docs-label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-        <h2 class="modal-title" id="modal-entrance-vote-label">Connect your ID-card</h2>
+        <h2 class="modal-title" id="modal-access-docs-label">Bla bla header</h2>
       </div>
       <div class="modal-body text-lg">
         <p class="margin-bottom-lg">
-          Connect ID card reader to your computer and make sure it is installed and running on your computer (most card readers have an indicator light for confirmation) and put your card in the reader.
+          Bla bla text
         </p>
 
         <p class="margin-bottom-lg">
-          Click authenticate and enter their ID card PIN1 code (four digits).
+          More text
         </p>
       </div>
       <div class="modal-footer">
