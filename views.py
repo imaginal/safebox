@@ -61,14 +61,20 @@ def login():
     return redirect('/')
 
 
+@app.route('/logout')
+def logout():
+    session['uid'] = None
+    return redirect('/')
+
+
 @app.route('/docs')
 def docs(template_name="docs.html"):
     user_id = session.get('uid')
     if not user_id:
         return redirect('/')
     user = User.get(User.id == user_id)
-    travels = Travel.select(Travel.user == user)
-    documents = Document.select(Document.user == user)
+    travels = Travel.select().where(Travel.user == user)
+    documents = Document.select().where(Document.user == user)
     return render_template(template_name,
         user=user, travels=travels, documents=documents)
 

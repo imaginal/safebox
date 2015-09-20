@@ -34,8 +34,8 @@ class Travel(db.Model):
     user = ForeignKeyField(User)
     country = CharField()
     address = CharField()
-    arrival_date = DateTimeField()
-    departure_date = DateTimeField()
+    arrival_date = DateField()
+    departure_date = DateField()
 
     def __unicode__(self):
         return self.country

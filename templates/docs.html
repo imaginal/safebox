@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+<section id="how-it-works">
+  <h2 class="page-header">Welcome {{ user.full_name }}</h2>
+
+  <h3>Your travel info</h3>
+  <div class="table-responsive">
+    <table class="table">
+      <tr><th>Country</th><th>Address</th><th>Arrival</th><th>Departure</th></tr>
+      {% for t in travels %}
+      <tr><td>{{ t.country }}</td><td>{{ t.address }}</td>
+        <td>{{ t.arrival_date }}</td><td>{{ t.departure_date }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <h3>Your documents</h3>
+  {% for d in documents %}
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+
+</div> <!-- /container -->
+
+{% endblock content %}
+
+{% block logout %}
+<li><a href="/logout"><i class="fa fa-times"></i> Logout</a></li>
+{% endblock logout %}

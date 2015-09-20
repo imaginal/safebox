@@ -50,28 +50,34 @@
         </p>
 
   <div class="form-group">
+    <label for="FullName1" class="col-sm-4 control-label">Your Name</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="FullName1" name="FullName1" placeholder="Full Name">
+    </div>
+  </div>
+  <div class="form-group">
     <label for="MobileNumber1" class="col-sm-4 control-label">Moble No</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="MobileNumber1" placeholder="+371 000 00 00">
+      <input type="text" class="form-control" id="MobileNumber1" name="MobileNumber1" placeholder="+371 000 00 00">
     </div>
   </div>
   <div class="form-group">
-    <label for="BirthDate1" class="col-sm-4 control-label">Birth date</label>
+    <label for="BirthDate1" class="col-sm-4 control-label">Birth Date</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="BirthDate1" placeholder="1980-12-31">
+      <input type="text" class="form-control" id="BirthDate1" name="BirthDate1" placeholder="1980-12-31">
     </div>
   </div>
   <div class="form-group">
-    <label for="PinCode1" class="col-sm-4 control-label">Pin code</label>
-    <div class="col-sm-6">
-      <input type="password" class="form-control" id="PinCode1" placeholder="****" size="6" maxlength="6">
+    <label for="PinCode1" class="col-sm-4 control-label">Pin Code</label>
+    <div class="col-sm-2">
+      <input type="password" class="form-control" id="PinCode1" name="PinCode1" placeholder="****" size="6" maxlength="6">
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-6">
       <div class="checkbox">
         <label>
-          <input type="checkbox">  I agree to the
+          <input type="checkbox" id="PrivacyPolicy1" name="PrivacyPolicy1">  I agree to the
           <i class="fa fa-lock"></i>
           <a href="/privacy-policy/">Privacy Policy</a>
         </label>
@@ -95,24 +101,52 @@
 <div class="modal fade" id="modal-access-docs" tabindex="-1" role="dialog" aria-labelledby="modal-access-docs-label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+
+<form class="form-horizontal" method="post" action="/login">
+
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-        <h2 class="modal-title" id="modal-access-docs-label">Bla bla header</h2>
+        <h2 class="modal-title" id="modal-access-docs-label">Welcome, please Login</h2>
       </div>
       <div class="modal-body text-lg">
         <p class="margin-bottom-lg">
-          Bla bla text
+          For login we need your mobile number and pin code:
         </p>
 
-        <p class="margin-bottom-lg">
-          More text
-        </p>
+
+  <div class="form-group">
+    <label for="MobileNumber1" class="col-sm-4 control-label">Moble No</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="MobileNumber1" name="MobileNumber1" placeholder="+371 000 00 00">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="PinCode1" class="col-sm-4 control-label">Pin Code</label>
+    <div class="col-sm-2">
+      <input type="password" class="form-control" id="PinCode1" name="PinCode1" placeholder="****" size="6" maxlength="6">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="PrivacyPolicy1" name="PrivacyPolicy1">  I agree to the
+          <i class="fa fa-lock"></i>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </label>
+      </div>
+    </div>
+  </div>
+
       </div>
       <div class="modal-footer">
-        <a class="btn btn-success btn-lg block-xs" href="https://www.safepoll.me/auth/">
+        <button class="btn btn-success btn-lg block-xs" type="submit">
           Authenticate &nbsp;<i class="fa fa-external-link fa-lg"></i>
-        </a>
+        </button>
       </div>
+
+</form>
+
     </div>
   </div>
 </div>
