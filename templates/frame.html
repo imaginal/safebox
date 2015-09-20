@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center">
+        <div class="logo2">
+          <h1>SafeBox</h1>
+        </div>
+        <p>Keep your documents safe and have a <a href="#">rescue</a> plan</p>
+        <div class="actions">
+          <a class="btn btn-default btn-lg" href="#modal-protect-docs" data-toggle="modal">
+            <i class="fa fa-cloud fa-super"></i><br>
+            Protect your <br> documents
+          </a>
+          <a class="btn btn-default btn-lg" href="#modal-access-docs" data-toggle="modal">
+            <i class="fa fa-key fa-super"></i><br>
+            Access your <br> documents
+          </a>
+        </div>
+        <div class="shameless-self-promotion">
+          <i class="fa fa-flag"></i> &nbsp;
+          In cooperation with the Ministry of Foreign Affairs<br> of the Republic of Latvia
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <i class="fa fa-lock"></i> &nbsp;
+          <a href="/privacy-policy/">Our Privacy Policy</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+</div> <!-- /container -->
+
+<div class="modal fade" id="modal-protect-docs" tabindex="-1" role="dialog" aria-labelledby="modal-protect-docs-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+<form class="form-horizontal" method="post" action="/signup">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        <h2 class="modal-title" id="modal-protect-docs-label">Welcome, please Sign Up</h2>
+      </div>
+      <div class="modal-body text-lg">
+        <p class="margin-bottom-lg">
+          Before we start choose pin code which will be used for alarm message:
+        </p>
+
+  <div class="form-group">
+    <label for="MobileNumber1" class="col-sm-4 control-label">Moble No</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="MobileNumber1" placeholder="+371 000 00 00">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="BirthDate1" class="col-sm-4 control-label">Birth date</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="BirthDate1" placeholder="1980-12-31">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="PinCode1" class="col-sm-4 control-label">Pin code</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" id="PinCode1" placeholder="****" size="6" maxlength="6">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">  I agree to the
+          <i class="fa fa-lock"></i>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </label>
+      </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success btn-lg block-xs" type="submit">
+          Sign Up &nbsp;<i class="fa fa-sign-in fa-lg"></i>
+        </button>
+      </div>
+
+</form>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-access-docs" tabindex="-1" role="dialog" aria-labelledby="modal-access-docs-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        <h2 class="modal-title" id="modal-access-docs-label">Bla bla header</h2>
+      </div>
+      <div class="modal-body text-lg">
+        <p class="margin-bottom-lg">
+          Bla bla text
+        </p>
+
+        <p class="margin-bottom-lg">
+          More text
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success btn-lg block-xs" href="https://www.safepoll.me/auth/">
+          Authenticate &nbsp;<i class="fa fa-external-link fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">
+    stLight.options({publisher: "1ab002f3-07c1-4e0c-a9ff-889fa3918043", doNotHash: true, doNotCopy: true, hashAddressBar: false});
+  </script>
+
+{% endblock content %}

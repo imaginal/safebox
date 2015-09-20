@@ -18,4 +18,7 @@ def main(template_name="main.html"):
     return render_template(template_name)
 
 
+@app.route('/frame')
+def frame(template_name="frame.html"):
+    return render_template(template_name)
 
