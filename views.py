@@ -79,3 +79,12 @@ def docs(template_name="docs.html"):
         user=user, travels=travels, documents=documents)
 
 
+
+@app.route('/the-problem/')
+def problem(template_name="problem.html"):
+    return render_template(template_name)
+
+
+@app.route('/privacy-policy/')
+def privacy(template_name="privacy.html"):
+    return render_template(template_name)
